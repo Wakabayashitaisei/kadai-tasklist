@@ -9,6 +9,6 @@
     {!! link_to_route('tasks.edit', 'この課題を編集しますか？', ['id' => $task->id]) !!}
 
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
-        {!! Form::submit('終わったぞー！！') !!}
+        {!! Form::submit('やったーー！！') !!}
     {!! Form::close() !!}
 @endsection
