@@ -4,30 +4,30 @@
 
    
 
-    <p>{{ $task->content }}</p>
+    <!--<p>{{ $task->content }}</p> -->
    <div class="row">
         <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6"> 
-         <h1>id = {{ $task->id }} の課題詳細ページ</h1>
+         <h1>Level = {{ $task->id }} の詳細ページ</h1>
       <table class="table table-bordered">
         <tr>
-            <th>id</th>
-            <td>{{ $task->id }}</td>
+            <th>Level</th>
+            <td>{{ $task->id }}</td> 
         </tr>
         <tr>
-            <th>status</th>
-            <td>{{ $task->title }}</td>
+            <th>Name of task</th>
+            <td>{{ $task->status }}</td>
         </tr>
         <tr>
-            <th>課題</th></th>
+            <th>content</th>
             <td>{{ $task->content }}</td>
         </tr>
         </table>
 
 
-     {!! link_to_route('tasks.edit', '転生する', ['id' => $task->id], ['class' => 'btn btn-default']) !!}
+     {!! link_to_route('tasks.edit', '転職する', ['id' => $task->id], ['class' => 'btn btn-default']) !!}
 
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
-        {!! Form::submit('やったーー！！',['class' => 'btn btn-danger']) !!}
+        {!! Form::submit('課題を倒した！',['class' => 'btn btn-danger']) !!}
     {!! Form::close() !!}
         </div>
     </div>
