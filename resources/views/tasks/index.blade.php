@@ -29,6 +29,7 @@
     <h1>Command list</h2>
         <ul class="list-inline">
             <li>[課題に取り組む]</li>
+            <li>[やる気スイッチを探す]</li>
             <li>[休憩する]</li>
             <li>[逃げる]</li>
         </ul>
