@@ -26,7 +26,7 @@
     <div class='title'>       
         <h1>TASK QUEST</h1>
     </div>
-    <h1>Command list</h2>
+    <h1>Command List</h2>
         <ul class="list-inline">
             <li>[課題に取り組む]</li>
             <li>[やる気スイッチを探す]</li>
