@@ -11,8 +11,9 @@
                 <a class="navbar-brand" href="/">tasklist</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>{!! link_to_route('tasks.create', '課題の攻撃！！') !!}</li>
+                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Signup</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
             </div>
         </div>
