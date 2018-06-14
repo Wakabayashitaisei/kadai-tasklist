@@ -101,7 +101,7 @@ class TasksController extends Controller
             return view('tasks.edit', [
             'task' => $task,
         ]);
-        } else {
+         }else {
         return redirect('/');
         }
     }
@@ -125,15 +125,7 @@ class TasksController extends Controller
         $task->content = $request->content;
         $task->save();
 
-         $task = Task::find($id);
-
-        if (\Auth::user()->id === $task->user_id){
-            return view('tasks.edit', [
-            'task' => $task,
-        ]);
-        } else {
         return redirect('/');
-        }
     }
 
     /**
